@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+
+</head>
+<body>
+    <nav id ="desktop-nav">
+        <div class= "logo">Fabio Villatoro</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#experience">Experience</a></li>
+                
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo">Fabio Villatoro</div>
+        <div class = "hamburger-menu">
+        <div class = "hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class = "menu-links">
+            <li><a href = "#about" onclick="toggleMenu()">About</a></li>
+            <li><a href = "#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href = "#experience" onclick="toggleMenu()">Experience</a></li>
+            
+            <li><a href = "#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/fabiopic.jpg" alt = "Fabio Villatoro profile picture" class="fabiopic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola! I'm</p>
+            <h1 class="title">Fabio Villatoro,</h1>
+            <p class="section__text__p2">and I'm a Software Developer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info</button>
+
+            </div>
+            <div id ="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/fabiovillatoro/'"/>
+
+                <img src="./assets/github.png" alt="My GitHub"
+                class="icon" onclick="location.href='https://github.com/Fabito007Brown'"/>
+            </div>
+            
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Learn</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/experience.JPG" alt = "Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>eCommerce Website, React App, Android Studio App <br /> and more!</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Computer Science and Applied Math Double Concentration <br />@Brown University '26</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Fabio, a sophomore majoring in Computer Science and Applied Mathematics at Brown University. My passion resides at the intersection of design, software engineering, and AI. I love using my programming skills to make a positive impact and creating captivating web experiences. Below, you'll discover a selection of projects that not only showcase my work but also some of the movements I believe in: education and community service.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Take a Look at</p>
+        <h1 class="title">My Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/jxe def.jpg" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">JovenesXElEspino</h2>
+                <p>React app designed for an emerging nonprofit organization in El Salvador. This website has provided the organization with a professional digital presence, enhancing their ability to make impactful presentations to stakeholders.</p>
+
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Fabito007Brown/jxe-website.git'"
+                    >
+                        GitHub
+                    </button>
+                    <button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fabito007brown.github.io/jxe-website/'"
+                    >
+                        Website
+
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/fragance shop def.jpg" alt="Project 2" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">FraganceShop SV</h2>
+                <p>An eCommerce website for a small perfume company in El Salvador which has successfully attracted a significant audience and generated over $10k in revenue within its first month of operation. <br></br></p>
+
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Fabito007Brown/jxe-website.git'"
+                    >
+                        GitHub
+                    </button>
+                    <button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fragranceshopsv.com/'"
+                    >
+                        Website
+
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/math on the go def.JPG" alt="Project 3" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Mate On The Go</h2>
+                <p>Award-winning Android app offering over 50 math lessons and quizzes for high school students. This educational app has garnered acclaim and popularity, with downloads spanning across 20 countries in Latin America. </p>
+
+                <div class="btn-container">
+                   
+                    
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.app.mateonthegoapp&hl=en_US&gl=US'"
+                    >App</button>
+                        
+
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+        
+
+        
+            
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>HTML</h3>
+                   
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>CSS</h3>
+                   
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>JavaScript</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Java</h3>
+                            
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>TypeScript</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technologies & Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>React.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>MongoDB</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Android Studio</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Git</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Jira Software</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3></h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class = "justify">
+            <h1>On-field Experience in Software Development</h1>
+            <p><strong>IT Project Management Intern @ Banco Cuscatlan:</strong> Contributed to the digital transformation efforts at one of Central America's fastest-growing banks. Conducted research and proposed Jira Service Management adoption to enhance Change Management. Improved website functionality through meticulous code assessments and reviews, reducing errors by 15% for a smoother user experience. Implemented Six Sigma methodologies to streamline processes, resulting in a 20% error reduction.<br></br></p>
+            <p><strong>Software Engineer @ Fullstack at Brown:</strong> Graduated from a comprehensive Web Development bootcamp with expertise in front-end development, server management, API integration, database design, and React.js. Currently improving the design and functionality of the computer science department's digital assets for enhanced user experience.<br></br></p>
+            <!-- <p><strong>Freelance Web Developer:</strong> Created a profitable e-commerce site for a local perfume company, generating over $9k in the first month. Implemented advanced features, including a user-friendly search bar and seamless WhatsApp integration. Designed an engaging React website for 'JovenesXElEspino,' establishing their online presence with captivating visuals and an interactive grid layout to boost user interaction.</p> -->
+            </div>
+        </div>
+
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+
+    </section>
+
+    <section id ="contact">
+        <p class = "section__text__p1">Get in Touch</p>
+        <h1 class = "title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class = "contact-info-container">
+                <img src="./assets/email.png" alt = "Email icon" class="icon contact-icon email-pic"/>
+                <p><a href="mailto:fabio_villatoro@brown.edu">fabio_villatoro@brown.edu</a></p>
+            </div>
+
+            <div class = "contact-info-container">
+                <img src="./assets/linkedin.png" alt = "LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/fabiovillatoro/">LinkedIn</a></p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <nav>
+            <div class = "nav-links-container">
+                <ul class = "nav-links">
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#experience">Experience</a></li>
+                    
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Fabio Villatoro</p>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
